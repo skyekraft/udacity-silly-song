@@ -6,8 +6,6 @@
 //  Copyright © 2016 AC Loaner. All rights reserved.
 //
 
-
-
 import UIKit
 import Foundation
 

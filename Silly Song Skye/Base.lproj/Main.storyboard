@@ -24,12 +24,12 @@
                                     <constraint firstAttribute="width" constant="266" id="z9r-g1-PTa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="52"/>
-                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.2624027694672405" green="1" blue="0.051961939416119152" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Your Name" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="36w-eF-NYf">
                                 <rect key="frame" x="208" y="190" width="184" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.54529587765957444" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.5971992816642242" blue="0.16444704959518108" alpha="0.54529587765957444" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="D5M-mg-zbc"/>
                                     <constraint firstAttribute="width" constant="184" id="ZG0-go-1Ia"/>
