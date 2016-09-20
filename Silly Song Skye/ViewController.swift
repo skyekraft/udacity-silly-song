@@ -21,19 +21,17 @@ class ViewController: UIViewController {
         nameField.delegate = self
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     @IBAction func reset(sender: AnyObject) {
         nameField.text = ""
         lyricsView.text = ""
     }
     
     @IBAction func displayLyrics(sender: AnyObject) {
-        if let nameField = nameField.text {
-        lyricsView.text = lyricsForName(bananaFanaTemplate, fullName: nameField)
+        guard let name = nameField.text where !name.isEmpty else {
+            lyricsView.text = "Please enter your name."
+            return
+        }
+        lyricsView.text = lyricsForName(bananaFanaTemplate, fullName: name)
     }
 
 }
@@ -60,7 +58,6 @@ func lyricsForName(bananaFanaTemplate: String, fullName: String) -> String {
     let lyrics = bananaFanaTemplate.stringByReplacingOccurrencesOfString("<FULL_NAME>", withString:  fullName).stringByReplacingOccurrencesOfString("<SHORT_NAME>", withString: stepOne)
     
     return lyrics
-}
 }
 
 extension ViewController: UITextFieldDelegate {
